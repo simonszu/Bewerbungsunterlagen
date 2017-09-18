@@ -1,0 +1,4 @@
+\select@language {german}
+\contentsline {chapter}{Lebenslauf}{2}{section*.1}
+\contentsline {chapter}{Bachelorzeugnis}{4}{section*.8}
+\contentsline {chapter}{Masterzeugnis}{5}{section*.8}

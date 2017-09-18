@@ -1,0 +1,15 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\input{babelbst.tex}
+\newcommand{\Capitalize}[1]{\uppercase{#1}}
+\newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+
+\bibitem{publication1}
+Vorname1 Nachname1 \bbland{} Vorname2 Nachname2.
+\newblock \textbf{Titel des Buches}.
+\newblock Musterherausgeber, erste \bbledition{}, YYYY.
+
+\end{thebibliography}
