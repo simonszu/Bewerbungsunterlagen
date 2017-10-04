@@ -9,6 +9,7 @@
 
 \usepackage[german]{babel}
 \usepackage{moderncv-additions}
+\usepackage{pdfpages}
 
 % moderncv themes
 \moderncvtheme{casual}   % optional arguments are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
@@ -21,6 +22,7 @@
 \usepackage[scale=0.8]{geometry}
 \setlength{\hintscolumnwidth}{3cm}			  % if you want to change the width of the column with the dates
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+
 
 \AtBeginDocument{\recomputelengths}           % required when changes are made to page layout lengths
 
@@ -38,6 +40,7 @@
 %\quote{``Das ist ein toller Frusterspruch\\ von Friede Frusterfrau.'' -- Friede Frusterfrau}                 % optional, remove the line if not wanted
 
 %\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
 
 %----------------------------------------------------------------------------------
 %            content
@@ -102,16 +105,16 @@
 \section{Ausbildung} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\cventry{10/2009 -- jetzt}{Bachelor of Science}{Technische Universität}{Dortmund}{\textit{Informatik}}{Nebenfach: Maschinenbau}  % arguments 3 to 6 are optional
+\cventry{10/2009 -- heute}{Bachelor of Science}{Technische Universität}{Dortmund}{\textit{Informatik}}{Nebenfach: Maschinenbau}  % arguments 3 to 6 are optional
 
-\cventry{09/2006 -- 07/2009}{Mechatroniker (IHK)}{Miele \& Cie. KG}{Bielefeld}{}{Zusätzlich: Elektrofachkraft} 
+\cventry{09/2006 -- 06/2009}{Mechatroniker (IHK)}{Miele \& Cie. KG}{Bielefeld}{}{Zusätzlich: Elektrofachkraft} 
 
 \section{Berufserfahrung} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \cventry{12/2012 -- heute}{Mitglied des WAN-Teams}{ECOFIS GmbH}{Dortmund}{}{}
 \cventry{10/2010 -- 11/2012}{First Level Support}{Sozialforschungsstelle der Technischen Universität}{Dortmund}{}{}
-\cventry{09/2006 -- 07/2009}{Auszubildender zum Mechatroniker (IHK)}{Miele \& Cie. KG}{Bielefeld}{}{}
+\cventry{09/2006 -- 06/2009}{Auszubildender zum Mechatroniker (IHK)}{Miele \& Cie. KG}{Bielefeld}{}{}
 
 \section{Sprachen} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -123,7 +126,7 @@
 \section{IT-Kompetenzen} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\cvline{Programmiersprachen}{Ruby, Python, C++, Go}
+\cvline{Programmiersprachen}{Ruby, Python, Java, C++, Go}
 \cvline{Betriebssysteme}{Debian Linux, Arch Linux, Apple macOS, Microsoft Windows}
 \cvline{Sonstige Tools}{git, svn, ansible, Eclipse, LaTeX, Microsoft Office}
 \newpage
@@ -137,7 +140,7 @@
 \section{Außeruniversitäre Tätigkeiten} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\cvline{Dortmunder Nachtschicht e.V.}{Organisation und Durchführung einer jährlichen, nächtlich stattfindenden Rätselrally im Dortmunder Stadtgebiet}
+\cvline{Dortmunder Nachtschicht e.V.}{Organisation und Durchführung einer jährlich stattfindenden, nächtlichen Rätselrally im Dortmunder Stadtgebiet}
 \cvline{Chaostreff Dortmund e.V.}{Mithilfe auf und Besuch von Events im Umfeld des Chaos Computer Clubs} 
 \cvline{Uni-Film-Club der TU Dortmund}{Planung und Durchführung von wöchentlichen Filmvorstellungen des Uni-Kinos}
 \cvline{Technisches Hilfswerk}{Technischer Helfer (zur Zeit inaktiv)}
@@ -167,26 +170,45 @@
 %\renewcommand*{\refname}{Abschlussarbeiten}
 \nocite{*}
 \bibliographystyle{cv}
-\bibliography{publications}       % 'publications' is the name of a BibTeX file
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
 
-\newpage
-\chapter{Bachelor}{zeugnis}
-\vspace*{1cm}
-\begin{center}
+
+%\includepdf[pages=1,addtotoc={
+%	4, chapter, 1, Arbeitszeugnis Miele \& Cie. KG, az-miele
+%	}]{azmiele.pdf}
+\includepdf[pages=1,addtotoc={1, section, 1, Arbeitszeugnis Miele \& Cie. KG, azmiele} ]{azmiele.pdf}
+\includepdf[pages=1,addtotoc={1, section, 1, Ausbildungszeugnis, ausbildungszeugnis} ]{ausbildungszeugnis.pdf}
+\includepdf[pages=1,addtotoc={1, section, 1, Arbeitszeugnis Sozialforschungsstelle Dortmund, azsfs} ]{azsfs.pdf}
+\includepdf[pages=1-,addtotoc={1, section, 1, Arbeitszeugnis ECOFIS GmbH, azsfs} ]{azecofis.pdf}
+\includepdf[pages=1-,addtotoc={1, section, 1, Notenspiegel, notenspiegel} ]{notenspiegel.pdf}
+
+%\includepdf[pages=1-,pagecommand={\chapter{Arbeitszeugnis Miele \& Cie. KG}}]{azmiele.pdf}
+%\includepdf[pages=1-]{ausbildungszeugnis.pdf}
+%\includepdf[pages=1-]{azsfs.pdf}
+%\includepdf[pages=1-]{notenspiegel.pdf}
+
+
+
+
+
+
+%\chapter{Bachelor}{zeugnis}
+%\vspace*{1cm}
+%\begin{center}
 	% \fbox{\includegraphics[height=0.85\textheight]{Bakk-Zeugnis}}	
-\end{center}
+%\end{center}
 
-\newpage
-\chapter{Master}{zeugnis}
-\vspace*{1cm}
-\begin{center}
+%\newpage
+%\chapter{Master}{zeugnis}
+%\vspace*{1cm}
+%\begin{center}
 	% \fbox{\includegraphics[height=0.85\textheight]{Masterzeugnis}}	
-\end{center}
+%\end{center}
 
-\vspace*{1cm}
-\begin{center}
+%\vspace*{1cm}
+%\begin{center}
 	% \fbox{\includegraphics[height=0.85\textheight]{Masterzeugnis-2}}	
-\end{center}
+%\end{center}
 
 % \newpage
 % \chapter{Abschluss}{zeugnis}

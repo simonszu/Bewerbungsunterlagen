@@ -1,4 +1,7 @@
 \select@language {german}
 \contentsline {chapter}{Lebenslauf}{2}{section*.1}
-\contentsline {chapter}{Bachelorzeugnis}{4}{section*.8}
-\contentsline {chapter}{Masterzeugnis}{5}{section*.8}
+\contentsline {section}{\ignorespaces Arbeitszeugnis Miele \& Cie. KG}{4}{section*.9}
+\contentsline {section}{\ignorespaces Ausbildungszeugnis}{5}{section*.10}
+\contentsline {section}{\ignorespaces Arbeitszeugnis Sozialforschungsstelle Dortmund}{6}{section*.11}
+\contentsline {section}{\ignorespaces Arbeitszeugnis ECOFIS GmbH}{7}{section*.12}
+\contentsline {section}{\ignorespaces Notenspiegel}{9}{section*.13}

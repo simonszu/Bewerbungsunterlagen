@@ -1,5 +1,5 @@
 \documentclass[11pt,a4paper]{article}
-\usepackage{ngerman}
+%\usepackage{ngerman}
 \usepackage[ngerman]{babel}
 \usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
@@ -7,10 +7,7 @@
 \usepackage{marvosym}
 \usepackage{ifpdf}
 \usepackage[pdftex]{color}
-\ifpdf
-  \usepackage[pdftex]{graphicx}
-\else
-  \usepackage[dvips]{graphicx}\fi
+\usepackage[pdftex]{graphicx}
 
 \pagestyle{empty}
 
@@ -18,8 +15,8 @@
 \setlength{\parindent}{0pt}
 \addtolength{\parskip}{6pt}
 
-\def\firstname{Max}
-\def\familyname{Mustermann}
+\def\firstname{Simon}
+\def\familyname{Szustkowski}
 \def\FileAuthor{\firstname~\familyname}
 \def\FileTitle{\firstname~\familyname's Bewerbungsschreiben}
 \def\FileSubject{Bewerbungsschreiben}
@@ -29,7 +26,6 @@
 \hyphenation{ins-be-son-de-re}
 \usepackage{url}
 \urlstyle{tt}
-\ifpdf
   \usepackage[pdftex,pdfborder=0,breaklinks,baseurl=http://,pdfpagemode=None,pdfstartview=XYZ,pdfstartpage=1]{hyperref}
   \hypersetup{
     pdfauthor   = \FileAuthor,%
@@ -38,13 +34,12 @@
     pdfkeywords = \FileKeyWords,%
     pdfcreator  = \LaTeX,%
     pdfproducer = \LaTeX}
-\else
-  \usepackage[dvips]{hyperref}
-\fi
+
 
 \definecolor{firstnamecolor}{RGB}{125,85,85}
 \definecolor{familynamecolor}{RGB}{138,74,57}
-\hypersetup{pdfborder=0 0 0}
+%\hypersetup{pdfborder=0 0 0}
+%\setlength{\parindent}{0pt}
 
 \begin{document}
 \sffamily   % for use with a résumé using sans serif fonts;
@@ -54,10 +49,10 @@
 	\raggedleft%
 	{\bfseries {\color{firstnamecolor}\firstname}~{\color{familynamecolor}\familyname}}\\[.35ex]
 	\small\itshape%
-	Musterstraße 08/15\\
-	8010 Graz\\[.35ex]
-	\Mobilefone~+43 123 45 789 90\\
-	\Letter~\href{mailto:max@mustermann.at}{max@mustermann.at}
+	Missundestraße 40\\
+	44145 Dortmund\\[.35ex]
+	\Mobilefone~+49 231 3306614\\
+	\Letter~ mail@simonszu.de
 \end{minipage}\\[0.5em]
 %
 {\color{firstnamecolor}\rule{\textwidth}{.25ex}}
@@ -66,11 +61,12 @@
 	\raggedright%
 	% {\bfseries {\color{firstnamecolor}
 	\vspace*{1em}
-	Musterfirma\\[.35ex]
+	Brockhaus AG\\[.35ex]
 	% }}
 	\small%
-	Hans-im-Glück-Gasse 47 Top 11\\
-	8010 Graz
+	Ewelina Kulesza\\
+	Perbusch 17\\
+	44536 Lünen
 \end{minipage}
 %
 \hfill
@@ -83,17 +79,24 @@
 \end{minipage}\\[1em]
 \raggedright
 
-{\bfseries \color{familynamecolor}Bewerbung als Kasperl}\\[1.5em]
+{\bfseries \color{familynamecolor}Bewerbung auf eine Bachelor-Abschlussarbeit}\\[1.5em]
 
-Sehr geehrter Herr DI Dr. Pezi,\\[1em]
+Sehr geehrte Frau Kulesza,\\[1em]
 %
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+hiermit bewerbe ich mich auf die Möglichkeit, meine Bachelor-Abschlussarbeit bei der Brockhaus AG zu schreiben. Ich bin Student der Informatik an der Technischen Universität Dortmund mit dem Nebenfach Maschinenbau, und arbeite momentan als Administrator des Wide Area Networks des Unternehmens Creditreform.\par
+
+Während einer Grillveranstaltung an der Fakultät für Informatik erfuhr ich, dass die Brockhaus AG im Bereich Künstliche Intelligenz unter anderem an einer Verknüpfung mit digitalen Assistenten, z.B. Amazon Alexa arbeitet. Ich habe mich in letzter Zeit verstärkt mit dem Thema \glqq Internet of Things\grqq{} beschäftigt, und in diesem Kontext bereits ein wenig mit Amazon Alexa experimentiert, unter anderem im Zusammenspiel mit der Heimautomatisierungssoftware \glqq Home Assistant\grqq. Aus diesem Grund wären die Themenbereiche Internet of Things, bzw. digitale Assistenten ein interessanter Spielraum für meine Abschlussarbeit.  
+
+\par
+Durch eine Abschlussarbeit in Ihrem Unternehmen erhoffe ich mir eine praxisnahere Problemstellung und Themenfindung als es beispielsweise bei einer rein universitären Arbeit der Fall wäre.\\
+
+Ich freue mich auf Ihre Rückmeldung und verbleibe
 
   
 %Yours sincerely,\\[2em] % if the opening is "Dear Mr(s) Doe,"
-Mit freundlichen Grüßen,\\[3em] % if the opening is "Dear Sir or Madam,"
+mit freundlichen Grüßen,\\[3em] % if the opening is "Dear Sir or Madam,"
 %
-%\includegraphics[scale=0.75]{signature_blue}\\
+\includegraphics[scale=0.14]{unterschrift.jpg}\\
 {\bfseries \firstname~\familyname}\\
 %
 \vfill%
