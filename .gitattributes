@@ -1,0 +1,12 @@
+picture.jpg filter=lfs diff=lfs merge=lfs -text
+unterschrift.jpg filter=lfs diff=lfs merge=lfs -text
+picture-old.jpg filter=lfs diff=lfs merge=lfs -text
+azecofis.pdf filter=lfs diff=lfs merge=lfs -text
+azmiele.pdf filter=lfs diff=lfs merge=lfs -text
+example_letter_german.pdf filter=lfs diff=lfs merge=lfs -text
+Anschreiben.pdf filter=lfs diff=lfs merge=lfs -text
+azsfs.pdf filter=lfs diff=lfs merge=lfs -text
+example_cv_german.pdf filter=lfs diff=lfs merge=lfs -text
+Lebenslauf.pdf filter=lfs diff=lfs merge=lfs -text
+notenspiegel.pdf filter=lfs diff=lfs merge=lfs -text
+ausbildungszeugnis.pdf filter=lfs diff=lfs merge=lfs -text
