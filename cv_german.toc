@@ -1,6 +1,6 @@
-\select@language {german}
-\contentsline {chapter}{Lebenslauf}{2}{section*.1}
-\contentsline {section}{\ignorespaces Arbeitszeugnis ECOFIS GmbH}{4}{section*.9}
-\contentsline {section}{\ignorespaces Arbeitszeugnis Sozialforschungsstelle Dortmund}{6}{section*.10}
-\contentsline {section}{\ignorespaces Arbeitszeugnis Miele \& Cie. KG}{7}{section*.11}
-\contentsline {section}{\ignorespaces Ausbildungszeugnis}{8}{section*.12}
+\babel@toc {german}{}
+\contentsline {chapter}{Lebenslauf}{2}{section*.1}% 
+\contentsline {section}{\ignorespaces Arbeitszeugnis ECOFIS GmbH}{4}{section*.10}% 
+\contentsline {section}{\ignorespaces Arbeitszeugnis Sozialforschungsstelle Dortmund}{6}{section*.11}% 
+\contentsline {section}{\ignorespaces Arbeitszeugnis Miele \& Cie. KG}{7}{section*.12}% 
+\contentsline {section}{\ignorespaces Ausbildungszeugnis}{8}{section*.13}% 
