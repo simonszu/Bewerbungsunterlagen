@@ -18,7 +18,7 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: cv_german/cv_german.tex
+          root_file: CV/cv_german.tex
 
       - name: Create Release
         id: create_release
@@ -38,6 +38,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} 
-          asset_path: ./cv_german/cv_german.pdf
-          asset_name: cv_german.pdf
+          asset_path: ./CV/cv_german.pdf
+          asset_name: Lebenslauf.pdf
           asset_content_type: pdf
