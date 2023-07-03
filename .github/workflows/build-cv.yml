@@ -6,7 +6,7 @@ on:
     paths:
       - CV
     tags:
-      - '*.*.*'
+      - 'v*.*'
 
 jobs:
   build_latex:
