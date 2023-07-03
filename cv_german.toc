@@ -1,6 +1,0 @@
-\babel@toc {german}{}\relax 
-\contentsline {chapter}{Lebenslauf}{2}{section*.1}%
-\contentsline {section}{\ignorespaces Arbeitszeugnis ECOFIS GmbH}{5}{section*.12}%
-\contentsline {section}{\ignorespaces Arbeitszeugnis Sozialforschungsstelle Dortmund}{7}{section*.13}%
-\contentsline {section}{\ignorespaces Arbeitszeugnis Miele \& Cie. KG}{8}{section*.14}%
-\contentsline {section}{\ignorespaces Ausbildungszeugnis}{9}{section*.15}%

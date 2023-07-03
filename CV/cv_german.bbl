@@ -1,0 +1,16 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\input{babelbst.tex}
+\newcommand{\Capitalize}[1]{\uppercase{#1}}
+\newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+
+\bibitem{publication1}
+Simon Szustkowski.
+\newblock \textbf{CNN-unterst\"utzte Kompensierung von Beleuchtungsartefakten
+  in Bilddaten}.
+\newblock Technische Universit\"at Dortmund, 2018.
+
+\end{thebibliography}
