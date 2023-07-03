@@ -20,7 +20,7 @@ jobs:
         with:
           root_file: CV/cv_german.tex
         env:
-          TEXINPUTS: "."
+          TEXINPUTS: ".:"
 
 
       - name: Create Release
