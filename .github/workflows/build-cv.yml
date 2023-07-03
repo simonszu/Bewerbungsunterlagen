@@ -6,7 +6,7 @@ on:
     paths:
       - CV
     tags:
-      - 'v*.*'
+      - 'v*.*.*'
 
 jobs:
   build_latex:
@@ -19,6 +19,9 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: CV/cv_german.tex
+        env:
+          TEXINPUTS: "."
+
 
       - name: Create Release
         id: create_release
