@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.3)  3 JUL 2023 17:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.3)  3 JUL 2023 17:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -790,10 +790,10 @@ Package rerunfilecheck Info: File `cv_german.out' has not changed.
 (rerunfilecheck)             Checksum: F8B4BD1E96DFF2E491F74652433E4E86;93.
  ) 
 Here is how much of TeX's memory you used:
- 12197 strings out of 476025
- 198496 string characters out of 5790018
+ 12198 strings out of 476025
+ 198536 string characters out of 5790018
  1870388 words of memory out of 5000000
- 32391 multiletter control sequences out of 15000+600000
+ 32392 multiletter control sequences out of 15000+600000
  554052 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  80i,17n,79p,860b,617s stack positions out of 10000i,1000n,20000p,200000b,200000s
