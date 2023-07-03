@@ -26,10 +26,10 @@ jobs:
           TEXINPUTS: ".:./CV//:"
 
       - name: Rename file 
-        run: mv cv_german.pdf Lebenslauf.pdf
+        run: mv CV/cv_german.pdf CV/Lebenslauf.pdf
 
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: Lebenslauf.pdf
+          files: CV/Lebenslauf.pdf
