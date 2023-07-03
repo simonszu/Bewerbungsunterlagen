@@ -1,2 +1,13 @@
 *.pdf
 !CV/Arbeitszeugnisse/*.pdf
+*.toc
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.gz
+*.toc
+*.bst
+*.dbj
+*.log
