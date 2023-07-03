@@ -18,7 +18,8 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: CV/cv_german.tex
+          root_file: cv_german.tex
+          working_directory: "CV"
         env:
           TEXINPUTS: ".:./CV//:"
 
