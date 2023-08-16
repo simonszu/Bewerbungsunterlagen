@@ -19,6 +19,7 @@ jobs:
         id: get-date
         run: |
           echo "::set-output name=date::$(/bin/date -u "+%Y%m%d")"
+          echo "::set-output name=time::$(/bin/date -u "+%T")"
         shell: bash
 
       - name: Cache
@@ -70,7 +71,7 @@ jobs:
         uses: softprops/action-gh-release@v1
 #        if: startsWith(github.ref, 'refs/tags/')
         with:
-          tag_name: ${{ github.sha }}
+          tag_name: ${{ steps.get-date.outputs.date }}-${{ steps.get-date.outputs.time }}
           files: |
             CV/cv_german.pdf
             CV/cv_english.pdf
