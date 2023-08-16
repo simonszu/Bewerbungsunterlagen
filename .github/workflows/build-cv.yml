@@ -17,7 +17,7 @@ jobs:
         with:
           lfs: true
 
-      - name: Compile LaTeX document
+      - name: Compile LaTeX document for german CV
         uses: xu-cheng/latex-action@v2
         with:
           root_file: cv_german.tex
@@ -25,11 +25,18 @@ jobs:
         env:
           TEXINPUTS: ".:./CV//:"
 
-      - name: Rename file 
-        run: mv CV/cv_german.pdf CV/Lebenslauf.pdf
+      - name: Compile LaTeX document for english CV
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: cv_english.tex
+          working_directory: "CV"
+        env:
+          TEXINPUTS: ".:./CV//:"
 
       - name: Release
         uses: softprops/action-gh-release@v1
-        if: startsWith(github.ref, 'refs/tags/')
+#        if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: CV/Lebenslauf.pdf
+          files: |
+            CV/cv_german.pdf
+            CV/cv_english.pdf
