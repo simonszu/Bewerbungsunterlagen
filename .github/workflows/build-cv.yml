@@ -5,8 +5,8 @@ on:
   push:
     paths:
       - CV
-    tags:
-      - 'v*.*.*'
+#    tags:
+#      - 'v*.*.*'
 
 jobs:
   build_latex:
