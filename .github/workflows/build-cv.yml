@@ -12,6 +12,39 @@ jobs:
   build_latex:
     runs-on: ubuntu-latest
     steps:
+
+# https://github.com/actions/cache#creating-a-cache-key
+      # http://man7.org/linux/man-pages/man1/date.1.html
+      - name: Get Date
+        id: get-date
+        run: |
+          echo "::set-output name=date::$(/bin/date -u "+%Y%m%d")"
+        shell: bash
+
+      - name: Cache
+        uses: actions/cache@v3
+        with:
+          # A list of files, directories, and wildcard patterns to cache and restore
+          path: |
+            *.aux
+            *.lof
+            *.lot
+            *.fls
+            *.out
+            *.toc
+            *.fmt
+            *.fot
+            *.cb
+            *.cb2
+            .*.lb
+            *.bbl
+            *.bcf
+            *.blg
+            *-blx.aux
+            *-blx.bib
+            *.run.xml
+          key: ${{ runner.os }}-${{ steps.get-date.outputs.date }}
+
       - name: Set up Git repository
         uses: actions/checkout@v3
         with:
@@ -37,7 +70,7 @@ jobs:
         uses: softprops/action-gh-release@v1
 #        if: startsWith(github.ref, 'refs/tags/')
         with:
-          tag_name: github.sha
+          tag_name: ${{ github.sha }}
           files: |
             CV/cv_german.pdf
             CV/cv_english.pdf
