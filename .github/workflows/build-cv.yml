@@ -3,8 +3,8 @@ name: Create and publish the CV
 
 on:
   push:
-    paths:
-      - CV
+#    paths:
+#      - CV
 #    tags:
 #      - 'v*.*.*'
 
